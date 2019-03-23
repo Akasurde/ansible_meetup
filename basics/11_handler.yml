@@ -1,0 +1,15 @@
+---
+- name: Handler
+  hosts: myhost
+  tasks:
+    - name: sample task 01
+      debug:
+        msg: "Apache restart is done"
+      notify:
+        - start apache
+
+  handlers:
+    - name: start apache
+      debug:
+        msg: "Task ran after apache restart"
+        

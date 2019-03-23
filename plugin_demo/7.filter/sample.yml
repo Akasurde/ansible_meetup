@@ -1,0 +1,12 @@
+---
+- name: Example of Filter plugin
+  gather_facts: no
+  hosts: localhost
+  vars:
+    arr:
+      - 1
+      - 2
+      - 3
+  tasks:
+    - debug:
+        msg: "{{ arr | min }}"

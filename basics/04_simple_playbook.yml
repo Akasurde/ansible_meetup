@@ -1,0 +1,10 @@
+---
+- name: Simple Playbook
+  hosts:  localhost
+  tasks:
+    - name: Debug tasks 1
+      debug:
+        msg: "Hi from task 1"
+    - name: Debug tasks 2
+      debug:
+        msg: "Hi from task 2"

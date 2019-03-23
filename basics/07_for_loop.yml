@@ -1,0 +1,11 @@
+---
+- name: For loop example
+  hosts: myhost
+  tasks:
+    - name: For loop 
+      debug:
+        msg: "My name is {{ item }}"
+      with_items:
+        - Abhijeet
+        - Aayush
+        - Anjali

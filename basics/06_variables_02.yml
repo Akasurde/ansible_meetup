@@ -1,0 +1,12 @@
+---
+- name: Use variables Part 2
+  gather_facts: no
+  hosts: myhost
+  tasks:
+    - name: Get value of id of user
+      shell: id -u
+      register: id_val
+
+    - name: Use id variable in someother tasks
+      debug:
+        msg: "{{ id_val }}"

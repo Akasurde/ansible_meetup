@@ -1,0 +1,10 @@
+---
+- name: Read file from current directory
+  gather_facts: no
+  hosts: localhost
+  vars:
+    file_contents: "{{lookup('file', playbook_dir + '/file.txt')}}"
+  tasks:
+    - debug:
+        msg: "{{ file_contents }}"
+      

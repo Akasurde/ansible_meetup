@@ -1,0 +1,8 @@
+---
+- name: When example
+  hosts: myhost
+  tasks:
+    - name: Run task only when 
+      debug:
+        msg: "{{ ansible_distribution }}"
+      when: inventory_hostname != 'localhost'

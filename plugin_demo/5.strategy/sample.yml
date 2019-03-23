@@ -1,0 +1,8 @@
+---
+- name: Test
+  hosts: localhost
+  debugger: on_failed
+  gather_facts: no
+  tasks:
+    - fail:
+        msg: "Debug message 1"

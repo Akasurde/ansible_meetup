@@ -1,0 +1,13 @@
+---
+- name: Use variables
+  hosts: localhost
+  vars:
+    - user: amogh
+  tasks:
+    - name: Some interesting tasks
+      debug:
+        msg: "{{ user }}"
+
+    - name: Using variables from inventory file
+      debug:
+        msg: "This user variable : {{ username }} and password variable : {{ password }} is coming from inventory file"
