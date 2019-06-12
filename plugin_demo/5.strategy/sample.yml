@@ -2,7 +2,7 @@
 - name: Test
   hosts: localhost
   debugger: on_failed
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - fail:
         msg: "Debug message 1"

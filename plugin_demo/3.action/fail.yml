@@ -1,7 +1,7 @@
 ---
 - name: Example of Action plugin
   hosts: localhost
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - fail:
         msg: "This is failure"

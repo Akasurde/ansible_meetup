@@ -1,0 +1,2 @@
+[containers]
+friendly_wozniak ansible_connection=docker ansible_docker_extra_args="-H unix:///var/run/docker.sock"

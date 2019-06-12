@@ -1,0 +1,4 @@
+---
+- hosts: containers
+  tasks:
+    - raw: ls /
